@@ -48,26 +48,26 @@ const renderQuestion = (q) => {
      <h1>${q.questions}</h1>
         <div class="row">
           <div class="col-1 mt-5" style="display: flex; justify-content: center;">
-            <button type="button" class="btn btn-primary ${q.answer[3]}">A</button>
+            <button type="button" class="btn btn-primary ${q.answer[0]}">A</button>
           </div>
           <div class="col-10  mt-5">
-           ${q.choices[3]}
+           ${q.choices[0]}
           </div>
         </div>
         <div class="row">
           <div class="col-1  mt-5"style="display: flex; justify-content: center;" >
-            <button type="button" class="btn btn-primary ${q.answer[2]}">B</button>
+            <button type="button" class="btn btn-primary ${q.answer[1]}">B</button>
           </div>
           <div class="col-10 mt-5">
-           ${q.choices[2]}
+           ${q.choices[1]}
           </div>
         </div>
         <div class="row">
           <div class="col-1  mt-5" style="display: flex; justify-content: center;">
-            <button type="button" class="btn btn-primary ${q.answer[0]}">C</button>
+            <button type="button" class="btn btn-primary ${q.answer[2]}">C</button>
           </div>
           <div class="col-10 mt-5">
-            ${q.choices[0]}
+            ${q.choices[2]}
           </div>
         </div>
         <div class="row">
@@ -94,11 +94,11 @@ const renderQuestion = (q) => {
     <h1>Final Score</h1>
         <h2>Answers Correct: ${correct}</h2>
         <h2>Incorrect: ${incorrect}</h2>
-        <h2>Elapsed Time: ${elapsedTime}</h2>
+        <h2>Time Remaining: ${elapsedTime}</h2>
         <form>
           <div class="mb-3">
-            <label for="initials" class="form-label">Enter your initials to record your score!</label>
-            <input id="initials" type="text" class="form-control"  style=" width:25%">
+            <label for="name" class="form-label">Challenger! Enter your name, and be known through history!</label>
+            <input id="name" type="text" class="form-control" >
           </div>
           <button id="highScore" type="submit" class="btn btn-primary">Submit</button>
         </form>
@@ -107,7 +107,7 @@ const renderQuestion = (q) => {
     document.getElementById('highScore').addEventListener('click', event => {
       event.preventDefault()
       console.log("caught")
-      let name = document.getElementById('initials').value
+      let name = document.getElementById('name').value
       console.log(name)
       scores.push({ name, correct, elapsedTime })
 

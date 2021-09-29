@@ -21,3 +21,11 @@
   body {
     background-color:black;
   }
+
+  .container {
+      font-family: fantasy;
+  }
+
+  .active {
+      font-family: fantasy;
+  }
