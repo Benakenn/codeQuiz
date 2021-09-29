@@ -2,30 +2,34 @@ const scores = JSON.parse(localStorage.getItem('scores')) || []
 
 
 let questions = [{
-  // "How would you console log Hello World?"
 
-
-  questions: "Which of the following is NOT a JavaScript Data Types?",
-  choices: ["Number", "String", "Object", "Web"],
+  questions: "In which of these HTML elements do we put Javascript in?",
+  choices: ["scripting", "js", "javascript", 'script'],
   answer: ['incorrect', 'incorrect', 'incorrect', 'correct']
 },
 
 {
-  questions: "What does NaN mean?",
-  choices: ["Not a Neutral", "Never ate Natto", "Not a Number", "Not a Name"],
-  answer: ['incorrect', 'incorrect', 'correct', 'incorrect']
+  questions: "In Javascript, NaN means?",
+  choices: ["Names and Numbers", "Nor a Number", "Non active Number", "Not a Number"],
+  answer: ['incorrect', 'incorrect', 'incorrect', 'correct']
 },
 
 {
-  questions: "What is considered to be a looping structure?",
-  choices: ["for", "repeat", "around", "again"],
+  questions: 'How would you call a function named "myFunction"?',
+  choices: ["myFunction()", "call function myFunction", "call myFunction", "myFunction call"],
   answer: ['correct', 'incorrect', 'incorrect', 'incorrect']
 },
 
 {
-  questions: "What is not a type of Pop up boxes in JavaScript?",
-  choices: ["Alert", "Prompt", "Confirm", "Show"],
-  answer: ['incorrect', 'incorrect', 'incorrect', 'correct']
+  questions: 'How do you write "Hello World" using alerts?',
+  choices: ['return("Hello World")', 'alert("Hello World")', 'print("Hello World")', 'confirm("Hello World")'],
+  answer: ['incorrect', 'correct', 'incorrect', 'incorrect']
+},
+
+{
+  questions: "Where should Javascript be placed?",
+  choices: ["the head section", "the body section", "the inter section", "both the head and body section"],
+  answer: ['incorrect', 'correct', 'incorrect', 'incorrect']
 }]
 
 let index = 0
