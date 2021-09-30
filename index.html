@@ -5,25 +5,53 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Code Quiz</title>
-  <link rel="stylesheet" href="./assets/css/reset.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  
-  
-  
-
-  <link rel="stylesheet" href="reset.css" />
-  <link rel="stylesheet" href="style.css" />
+  <!-- <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" /> -->
   <link rel="stylesheet" href="./scoreboard.html">
+<style>
 
+.heading {
+    font-family: fantasy;
+    width: 50%;
+    text-align: center;
+    margin-top: 10px;
+    color: whitesmoke;
+  }
+  
+  .timer {
+    text-align: right;
+    font-size: 30px;
+    /* border-style: solid; */
+    border-width: 1px;
+    color: whitesmoke;
+  }
+  #score {
+      color: white;
+      text-align: center;
+  }
+  
+  body {
+    background-color:black;
+  }
+
+  .container {
+      font-family: fantasy;
+  }
+
+  .active {
+      font-family: fantasy;
+  }
+
+
+</style>
 </head>
 <body>
 
   <ul class="nav justify-content-center">
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+      <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
     </li>
     <li class="nav-item">
         <a class="nav-link active" aria-current="page" href="./scoreboard.html">Scores</a>
@@ -45,7 +73,7 @@
       <div class="row">
         <div id="questions" class="col">
           <div class="container">
-            <h3>Challenger!</h3>
+            <h1>Challenger!</h1>
             <p>Step forward and test your javascript knowledge.</p>
             <p></p>
             <button id="start" type="button" class="btn btn-success">Begin!</button>

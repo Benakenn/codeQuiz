@@ -106,9 +106,9 @@ const renderQuestion = (q) => {
     document.getElementById('questions').append(finalScore)
     document.getElementById('highScore').addEventListener('click', event => {
       event.preventDefault()
-      console.log("caught")
+      console.log("added")
       let name = document.getElementById('name').value
-      console.log(name)
+      console.log("name")
       scores.push({ name, correct, elapsedTime })
 
       localStorage.setItem('scores', JSON.stringify(scores))
